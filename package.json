@@ -7,7 +7,6 @@
     "compile-css": "sass ./src/sass/style.scss ./dist/style.css --watch",
     "build": "webpack --watch",
     "stylelint": "stylelint ./src/sass/*.scss",
-    "start:dev": "webpack-dev-server",
     "start": "webpack serve --open"
   },
   "author": "",
@@ -20,6 +19,7 @@
     "eslint-webpack-plugin": "^4.0.1",
     "html-webpack-plugin": "^5.6.0",
     "mini-css-extract-plugin": "^2.8.0",
+    "postcss-loader": "^8.1.1",
     "pug": "^3.0.2",
     "pug-plugin": "^4.9.9",
     "sass-loader": "^14.1.1",
