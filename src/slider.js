@@ -1,3 +1,9 @@
+import banner_1 from "./img/banner_1.png";
+import banner_2 from "./img/banner_2.png";
+import banner_3 from "./img/banner_3.png"; 
+
+const pictureArr = [banner_1, banner_2, banner_3];
+
 class Slider {
     constructor() {
         this.sliderIndex = 0;
@@ -5,8 +11,11 @@ class Slider {
         this.sliderButtonPosition = document.querySelectorAll(".bunner__buttons-element");
     }
     
-    sliderFunc() {              
-        this.sliderPosition.src = `./img/banner_${this.sliderIndex + 1}.png`;
+    sliderFunc() {             
+        console.log("banner_" + Number(this.sliderIndex+1));
+        console.log(typeof("banner_" + this.sliderIndex+1));
+
+        this.sliderPosition.src = pictureArr[this.sliderIndex];
         this.sliderButtonPosition.forEach((element) => {
             element.style.backgroundColor = "#EFEEF6";
         });

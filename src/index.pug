@@ -1,86 +1,88 @@
 doctype html
-head
-  meta(charset='UTF-8')
-  meta(name='viewport' content='width=device-width, initial-scale=1.0')
-  title Bookshop
-  link(rel='stylesheet' type='text/scss' href='./sass/style.scss')
-a.promo_1(href='#')
-  div CHANGE OLD BOOK ON NEW
-  img(src='./img/arrow.svg' alt='arrow.svg')
-a.promo_2(href='#')
-  div TOP 100 BOOKS 2022
-  img(src='./img/arrow.svg' alt='arrow.svg')
-.wrapper
-  header.header
-    a.header__logo(href='#') Bookshop
-    nav.header__menu
-      a.header__menu-element(href='#') BOOKS
-      a.header__menu-element(href='#') AUDIOBOOKS
-      a.header__menu-element(href='#') STATIONERY &amp; GIFTS
-      a.header__menu-element(href='#') BLOG
-    .header__icon
-      a.header__icon-element(href='#' title='User')
-        img(src='./img/user.svg' alt='user.svg')
-      a.header__icon-element(href='#' title='Search')
-        img(src='./img/search.svg' alt='search.svg')
-      a.header__icon-element.header__icon-element-cart(href='#' title='Shopping cart')
-        img(src='./img/shop bag.svg' alt='shop bag.svg')
-    .header__inTheCartIndex
-  .banner
-    img.banner-elem(src='./img/banner_1.png' alt='bunnerFile.png')
-  .banner__buttons
-    .bunner__buttons-element(style='background:#9E98DC')
-    .bunner__buttons-element
-    .bunner__buttons-element
-  .categories
-    button.categories__element.categories__element_active(data-category='Architecture')
-      .categories__element_ring(data-category='Architecture' style='background:#756AD3')
-      div Architecture
-    button.categories__element(data-category='Art')
-      .categories__element_ring(data-category='Art' style='background: #EFEEF6')
-      div Art &amp; Fashion
-    button.categories__element(data-category='Biography&Autobiography')
-      .categories__element_ring(data-category='Biography&Autobiography' style='background: #EFEEF6')
-      div Biography
-    button.categories__element(data-category='Business')
-      .categories__element_ring(data-category='Business' style='background: #EFEEF6')
-      div Business
-    button.categories__element(data-category='Crafts&Hobbies')
-      .categories__element_ring(data-category='Crafts&Hobbies' style='background: #EFEEF6')
-      div Crafts &amp; Hobbies
-    button.categories__element(data-category='Drama')
-      .categories__element_ring(data-category='Drama' style='background: #EFEEF6')
-      div Drama
-    button.categories__element(data-category='Fiction')
-      .categories__element_ring(data-category='Fiction' style='background: #EFEEF6')
-      div Fiction
-    button.categories__element(data-category='Cooking')
-      .categories__element_ring(data-category='Cooking' style='background: #EFEEF6')
-      div Food &amp; Drink
-    button.categories__element(data-category='Health&Fitness')
-      .categories__element_ring(data-category='Health&Fitness' style='background: #EFEEF6')
-      div Health &amp; Wellbeing
-    button.categories__element(data-category='History')
-      .categories__element_ring(data-category='History' style='background: #EFEEF6')
-      div History &amp; Politics
-    button.categories__element(data-category='Humor')
-      .categories__element_ring(data-category='Humor' style='background: #EFEEF6')
-      div Humor
-    button.categories__element(data-category='Poetry')
-      .categories__element_ring(data-category='Poetry' style='background: #EFEEF6')
-      div Poetry
-    button.categories__element(data-category='Psychology')
-      .categories__element_ring(data-category='Psychology' style='background: #EFEEF6')
-      div Psychology
-    button.categories__element(data-category='Science')
-      .categories__element_ring(data-category='Science' style='background: #EFEEF6')
-      div Science
-    button.categories__element(data-category='Technology')
-      .categories__element_ring(data-category='Technology' style='background: #EFEEF6')
-      div Technology
-    button.categories__element(data-category='Travel')
-      .categories__element_ring(data-category='Travel' style='background: #EFEEF6')
-      div Travel &amp; Maps
-  .booksShowArea__wrapper
-    .booksShowArea
-script(type='module' src='./index.js')
+html
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Bookshop
+    link(rel='stylesheet' href=require('./sass/style.scss'))
+  body
+    a.promo_1(href='#')
+      div CHANGE OLD BOOK ON NEW
+      img(src=require('./img/arrow.svg') alt='arrow.svg')
+    a.promo_2(href='#')
+      div TOP 100 BOOKS 2022
+      img(src=require('./img/arrow.svg') alt='arrow.svg')
+    .wrapper
+      header.header
+        a.header__logo(href='#') Bookshop
+        nav.header__menu
+          a.header__menu-element(href='#') BOOKS
+          a.header__menu-element(href='#') AUDIOBOOKS
+          a.header__menu-element(href='#') STATIONERY &amp; GIFTS
+          a.header__menu-element(href='#') BLOG
+        .header__icon
+          a.header__icon-element(href='#' title='User')
+            img(src=require('./img/user.svg') alt='user.svg')
+          a.header__icon-element(href='#' title='Search')
+            img(src=require('./img/search.svg') alt='search.svg')
+          a.header__icon-element.header__icon-element-cart(href='#' title='Shopping cart')
+            img(src=require('./img/shop bag.svg') alt='shop bag.svg')
+        .header__inTheCartIndex
+      .banner
+        img.banner-elem(src=require('./img/banner_1.png') alt='bunnerFile.png')
+      .banner__buttons
+        .bunner__buttons-element(style='background:#9E98DC')
+        .bunner__buttons-element
+        .bunner__buttons-element
+      .categories
+        button.categories__element.categories__element_active(data-category='Architecture')
+          .categories__element_ring(data-category='Architecture' style='background:#756AD3')
+          div Architecture
+        button.categories__element(data-category='Art')
+          .categories__element_ring(data-category='Art' style='background: #EFEEF6')
+          div Art &amp; Fashion
+        button.categories__element(data-category='Biography&Autobiography')
+          .categories__element_ring(data-category='Biography&Autobiography' style='background: #EFEEF6')
+          div Biography
+        button.categories__element(data-category='Business')
+          .categories__element_ring(data-category='Business' style='background: #EFEEF6')
+          div Business
+        button.categories__element(data-category='Crafts&Hobbies')
+          .categories__element_ring(data-category='Crafts&Hobbies' style='background: #EFEEF6')
+          div Crafts &amp; Hobbies
+        button.categories__element(data-category='Drama')
+          .categories__element_ring(data-category='Drama' style='background: #EFEEF6')
+          div Drama
+        button.categories__element(data-category='Fiction')
+          .categories__element_ring(data-category='Fiction' style='background: #EFEEF6')
+          div Fiction
+        button.categories__element(data-category='Cooking')
+          .categories__element_ring(data-category='Cooking' style='background: #EFEEF6')
+          div Food &amp; Drink
+        button.categories__element(data-category='Health&Fitness')
+          .categories__element_ring(data-category='Health&Fitness' style='background: #EFEEF6')
+          div Health &amp; Wellbeing
+        button.categories__element(data-category='History')
+          .categories__element_ring(data-category='History' style='background: #EFEEF6')
+          div History &amp; Politics
+        button.categories__element(data-category='Humor')
+          .categories__element_ring(data-category='Humor' style='background: #EFEEF6')
+          div Humor
+        button.categories__element(data-category='Poetry')
+          .categories__element_ring(data-category='Poetry' style='background: #EFEEF6')
+          div Poetry
+        button.categories__element(data-category='Psychology')
+          .categories__element_ring(data-category='Psychology' style='background: #EFEEF6')
+          div Psychology
+        button.categories__element(data-category='Science')
+          .categories__element_ring(data-category='Science' style='background: #EFEEF6')
+          div Science
+        button.categories__element(data-category='Technology')
+          .categories__element_ring(data-category='Technology' style='background: #EFEEF6')
+          div Technology
+        button.categories__element(data-category='Travel')
+          .categories__element_ring(data-category='Travel' style='background: #EFEEF6')
+          div Travel &amp; Maps
+      .booksShowArea__wrapper
+        .booksShowArea
+    script(type='module' src=require('index.js'))

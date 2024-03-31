@@ -5,12 +5,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 body {
-    font-family: "Montserrat", sans-serif;
+    font-family: $main_font;
     font-weight: 500;
     font-style: normal;
     font-size: 12px;
-    background-color: #FFFFFF;
-    color: #1C2A39;
+    background-color: $main_backgroundColor;
+    color: $main_color;
 }
 
 .wrapper {
@@ -30,7 +30,7 @@ body {
     position: absolute;
     width: 149px;
     height: 204px;
-    background-color: #9E98DC;
+    background-color: $main_violet_backcolor;
     font-size: 18px;
     font-weight: 700;
     top: 189px;
@@ -73,7 +73,7 @@ body {
     position: absolute;
     width: 137px;
     height: 273px;
-    background-color: #FF8FE6;
+    background-color: $promo_2_backcolor;
     font-size: 18px;
     font-weight: 700;
     top: 475px;
@@ -121,14 +121,14 @@ header {
     top: 0;
     width: 100%;
     height: 116px;
-    background-color: #FFFFFF;
+    background-color: $main_backgroundColor;
 }
 
 .header__logo {
     font-weight: 700;
     font-size: 24px;
     text-decoration: none;
-    color: #1C2A39;
+    color: $main_color;
 }
 
 .header__menu {
@@ -149,7 +149,7 @@ header {
     text-decoration: none;
     font-size: 10px;
     font-weight: 700;
-    color: #1C2A39;
+    color: $main_color;
 }
 
 .header__menu :first-child {
@@ -181,8 +181,8 @@ header {
     right: -5px;
     width: 15px;
     height: 15px;
-    background-color: #FF353A;
-    color: #FFFFFF;
+    background-color: $inTheCartIndex_backcolor;
+    color: $main_backgroundColor;
     border-radius: 50%;
     font-size: 10px;
     font-weight: 500;
@@ -209,12 +209,12 @@ header {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: #EFEEF6;
+    background-color: $main_grey_backcolor;
     cursor: pointer;
 }
 
 .bunner__buttons-elementActive {
-    background-color: #9E98DC;
+    background-color: $main_violet_backcolor;
 }
 
 .categories {
@@ -223,7 +223,7 @@ header {
     position: absolute;
     width: 416px;
     height: 710px;
-    background-color: #EFEEF6;
+    background-color: $main_grey_backcolor;
     top: 952px;
     left: 0;
     padding-top: 45px;
@@ -252,7 +252,6 @@ header {
 }
 .categories__element_ring {
     margin-right: 14px;
-    /* background-color: #EFEEF6; */
     width: 6px;
     height: 6px;
     border-radius: 50%;
@@ -261,7 +260,7 @@ header {
 .categories__element_active {
     font-size: 16px;
     font-weight: 900;
-    color: #1C2A39;
+    color: $main_color;
     text-decoration: none;
     @media screen and (max-width: 430px) {
         font-size: 12px;
@@ -296,12 +295,11 @@ header {
     height: 45px;
     font-weight: 700;
     font-size: 8px;
-    background-color: #FFFFFF;
+    background-color: $main_backgroundColor;
     cursor: pointer;
-    /* margin: 96px auto 75px auto; */
     margin: 0 auto;
-    border: solid #4C3DB2 1px;
-    color: #4C3DB2;
+    border: $button_violet_color 1px solid;
+    color: $button_violet_color;
 }
 
 .buttonLoadMore {
@@ -309,8 +307,8 @@ header {
 }
 
 .button:hover {
-    background-color: #4C3DB2;
-    color: #FFFFFF;
+    background-color: $button_violet_color;
+    color: $main_backgroundColor;
     border: none;
     cursor: pointer;
 }
@@ -320,12 +318,12 @@ header {
 }
 
 .buttonInTheCart {
-    border: solid #EEEDF5 1px;
-    color: #5C6A79;
+    border: solid $button_lightgrey_color 1px;
+    color: $button_darkgrey_color;
 }
 
 .buttonInTheCart:hover {
-    background-color: #5C6A79;
+    background-color: $button_darkgrey_color;
 }
 
 .booksShowArea__element {
@@ -358,7 +356,7 @@ header {
 .booksShowArea__element-specAuthor,
 .booksShowArea__element-specRaiting_review,
 .booksShowArea__element-specDescript {
-    font-family: "Open sans", sans-serif;
+    font-family: $second_font;
     font-weight: 400;
     font-size: 10px;
     margin-bottom: 4px;
@@ -366,11 +364,11 @@ header {
 }
 
 .booksShowArea__element-specTitle {
-    font-family: "Montserrat", sans-serif;
+    font-family: $main_font;
     font-weight: 700;
     font-size: 16px;
     margin-bottom: 4px;
-    color: #1C2A39;
+    color: $main_color;
 }
 
 .booksShowArea__element-specRaiting {
@@ -383,7 +381,7 @@ header {
     margin-top: 16px;
 }
 .booksShowArea__element-specPrice {
-    font-family: "Montserrat", sans-serif;
+    font-family: $main_font;
     font-weight: 700;
     font-size: 13px;
     margin: 16px 0 16px 0;
